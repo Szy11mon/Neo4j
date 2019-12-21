@@ -1,0 +1,430 @@
+CREATE (SteinsGate:Anime {title:'Steins;Gate', released:2011, score:9.11})
+CREATE (Miyano:Person {name:'Mamoru Miyano', born:1983})
+CREATE (KanaHana:Person {name:'Kana Hanazawa', born:1989})
+CREATE (Yukari:Person {name:'Tamura Yukari', born:1976})
+CREATE (Imai:Person {name:'Imai Asami', born:1977})
+CREATE (Hamasaki:Person {name:'Hiroshi Hamasaki', born:1959})
+CREATE (WhiteFox:Studio {name:'White Fox'})
+CREATE
+(Miyano)-[:VOICED_IN {roles:['Okabe Rintarou']}]->(SteinsGate),
+(KanaHana)-[:VOICED_IN {roles:['Mayuri Shina']}]->(SteinsGate),
+(Yukari)-[:VOICED_IN {roles:['Suzuha Amane']}]->(SteinsGate),
+(Imai)-[:VOICED_IN {roles:['Kurisu Makise']}]->(SteinsGate),
+(Hamasaki)-[:DIRECTED]->(SteinsGate),
+(WhiteFox)-[:CREATED]->(SteinsGate)
+
+
+CREATE (Shaft:Studio {name:'Shaft'})
+CREATE (Yuuki:Person {name:"Aoi Yuuki", born:1992})
+CREATE (Saito:Person {name:"Chiwa Saito", born:1981})
+CREATE (Kitamura:Person {name:"Eri Kitamura", born:1987})
+CREATE (Nonaka:Person {name:"Ai Nonaka", born:1981})
+CREATE (Mizuhashi:Person {name:"Kaori Mizushashi", born:1974})
+CREATE (Katou:Person {name:"Emiri Katou", born:1983})
+CREATE (Shinbo:Person {name:"Akiyuki Shinbo", born:1961})
+CREATE (Urobuchi:Person {name:"Gen Urobuchi", born:1972})
+
+
+CREATE (Madoka:Anime {title:'Puella Magi Madoka Magica', released:2011, score:8.44})
+CREATE
+(Yuuki)-[:VOICED_IN {roles:['Madoka Kaname']}]->(Madoka),
+(Saito)-[:VOICED_IN {roles:['Homura Akemi']}]->(Madoka),
+(Kitamura)-[:VOICED_IN {roles:['Sayaka Miki']}]->(Madoka),
+(Nonaka)-[:VOICED_IN {roles:['Kyouko Sakura']}]->(Madoka),
+(Katou)-[:VOICED_IN {roles:['Kyuubey']}]->(Madoka),
+(Mizuhashi)-[:VOICED_IN {roles:['Mami Tomoe']}]->(Madoka),
+(Shinbo)-[:DIRECTED]->(Madoka),
+(Urobuchi)-[:WROTE]->(Madoka),
+(Shaft)-[:CREATED]->(Madoka)
+
+
+CREATE (KyoAni:Studio {name:'Kyoto Animation'})
+CREATE (Toyosaki:Person {name:"Aki Toyosaki", born:1986})
+CREATE (Hikasa:Person {name:"Yoko Hikasa", born:1985})
+CREATE (Kotobuki:Person {name:"Minako Kotobuki", born:1991})
+CREATE (Taketatsu:Person {name:"Ayana Taketatsu", born:1989})
+CREATE (Sato:Person {name:"Satomi Sato", born:1986})
+CREATE (Yamada:Person {name:"Naoko Yamada", born:1984})
+
+
+CREATE (KEION:Anime {title:'K-ON!', released:2009, score:7.86})
+CREATE
+(Toyosaki)-[:VOICED_IN {roles:['Yui Hirasawa']}]->(KEION),
+(Hikasa)-[:VOICED_IN {roles:['Mio Akiyama']}]->(KEION),
+(Kotobuki)-[:VOICED_IN {roles:['Tsumugi Kotobuki']}]->(KEION),
+(Taketatsu)-[:VOICED_IN {roles:['Azusa Nakano']}]->(KEION),
+(Sato)-[:VOICED_IN {roles:['Ritsu Tainaka']}]->(KEION),
+(Yamada)-[:DIRECTED]->(KEION),
+(KyoAni)-[:CREATED]->(KEION)
+
+
+CREATE (KEION2:Anime {title:'K-ON!!', released:2010, score:8.11})
+CREATE
+(Toyosaki)-[:VOICED_IN {roles:['Yui Hirasawa']}]->(KEION2),
+(Hikasa)-[:VOICED_IN {roles:['Mio Akiyama']}]->(KEION2),
+(Kotobuki)-[:VOICED_IN {roles:['Tsumugi Kotobuki']}]->(KEION2),
+(Taketatsu)-[:VOICED_IN {roles:['Azusa Nakano']}]->(KEION2),
+(Sato)-[:VOICED_IN {roles:['Ritsu Tainaka']}]->(KEION2),
+(Yamada)-[:DIRECTED]->(KEION2),
+(KyoAni)-[:CREATED]->(KEION2)
+
+
+CREATE (WIT:Studio {name:'WIT Studio'})
+CREATE (Kaji:Person {name:"Yuki Kaji", born:1985})
+CREATE (IshikawaY:Person {name:"Yui Ishikawa", born:1989})
+CREATE (Inoue:Person {name:"Marina Inoue", born:1985})
+CREATE (Kamiya:Person {name:"Hiroshi Kamiya", born:1975})
+CREATE (Ono:Person {name:"Daisuke Ono", born:1978})
+CREATE (Isayama:Person {name:"Hajime Isayama", born:1986})
+CREATE (Araki:Person {name:"Tetsuro Araki", born:1976})
+
+
+CREATE (SNK:Anime {title:'Attack on Titan', released:2013, score:8.48})
+CREATE
+(Kaji)-[:VOICED_IN {roles:['Eren Yeager']}]->(SNK),
+(IshikawaY)-[:VOICED_IN {roles:['Mikasa Ackerman']}]->(SNK),
+(Inoue)-[:VOICED_IN {roles:['Armin Arlert']}]->(SNK),
+(Kamiya)-[:VOICED_IN {roles:['Levi']}]->(SNK),
+(Ono)-[:VOICED_IN {roles:['Erwin Smith']}]->(SNK),
+(Araki)-[:DIRECTED]->(SNK),
+(Isayama)-[:WROTE]->(SNK),
+(WIT)-[:CREATED]->(SNK)
+
+
+CREATE (Sugita:Person {name:"Tomokazu Sugita", born:1980})
+CREATE (Hirano:Person {name:"Aya Hirano", born:1987})
+CREATE (Chihara:Person {name:"Minori Chihara", born:1980})
+CREATE (Gotou:Person {name:"Yuuko Gotou", born:1975})
+CREATE (Ishihara:Person {name:"Tatsuya Ishihara", born:1966})
+CREATE (Tanigawa:Person {name:"Nagaru Tanigawa", born:1970})
+
+
+CREATE (Haruhi:Anime {title:'The Melancholy of Haruhi Suzumiya', released:2006, score:7.95})
+CREATE
+(Sugita)-[:VOICED_IN {roles:['Kyon']}]->(Haruhi),
+(Hirano)-[:VOICED_IN {roles:['Haruhi Suzumiya']}]->(Haruhi),
+(Chihara)-[:VOICED_IN {roles:['Yuki Nagato']}]->(Haruhi),
+(Gotou)-[:VOICED_IN {roles:['Mikuru Asahina']}]->(Haruhi),
+(Ono)-[:VOICED_IN {roles:['Itsuki Koizumi']}]->(Haruhi),
+(Ishihara)-[:DIRECTED]->(Haruhi),
+(Tanigawa)-[:WROTE]->(Haruhi),
+(KyoAni)-[:CREATED]->(Haruhi)
+
+
+CREATE (Sunrise:Studio {name:'Sunrise'})
+CREATE (Sakaguchi:Person {name:"Daisuke Sakaguchi", born:1973})
+CREATE (Kugimiya:Person {name:"Rie Kugimiya", born:1979})
+CREATE (Ishida:Person {name:"Akira Ishida", born:1967})
+CREATE (Nakai:Person {name:"Kazuya Nakai", born:1967})
+CREATE (Sorachi:Person {name:"Hideaki Sorachi", born:1979})
+
+
+CREATE (Gintama:Anime {title:'Gintama', released:2006, score:9.00})
+CREATE
+(Sugita)-[:VOICED_IN {roles:['Gintoki Sakata']}]->(Gintama),
+(Kugimiya)-[:VOICED_IN {roles:['Kagura']}]->(Gintama),
+(Sakaguchi)-[:VOICED_IN {roles:['Shinpachi Shimura']}]->(Gintama),
+(Nakai)-[:VOICED_IN {roles:['Toushiro Hijikata']}]->(Gintama),
+(Ishida)-[:VOICED_IN {roles:['Katsura Kotaro']}]->(Gintama),
+(Sorachi)-[:WROTE]->(Gintama),
+(Sunrise)-[:CREATED]->(Gintama)
+
+
+CREATE (SilverLink:Studio {name:'Silver Link'})
+CREATE (Koiwai:Person {name:"Kotori Koiwai", born:1973})
+CREATE (Asumi:Person {name:"Kana Asumi", born:1979})
+CREATE (Sakura:Person {name:"Ayane Sakura", born:1967})
+CREATE (Murakawa:Person {name:"Rie Murakawa", born:1967})
+CREATE (Kawatsura:Person {name:"Shinya Kawatsura", born:1979})
+
+
+CREATE (NNB:Anime {title:'Non Non Biyori', released:2013, score:8.01})
+CREATE
+(Koiwai)-[:VOICED_IN {roles:['Renge Miyauchi']}]->(NNB),
+(Asumi)-[:VOICED_IN {roles:['Komari Koshigaya']}]->(NNB),
+(Sakura)-[:VOICED_IN {roles:['Natsumi Koshigaya']}]->(NNB),
+(Murakawa)-[:VOICED_IN {roles:['Hotaru Ichijou']}]->(NNB),
+(Kawatsura)-[:DIRECTED]->(NNB),
+(SilverLink)-[:CREATED]->(NNB)
+
+
+CREATE (Shintani:Person {name:"Ryoko Shintani", born:1981})
+
+
+CREATE (Hidamari:Anime {title:'Hidamari Sketch', released:2007, score:7.54})
+CREATE
+(Shintani)-[:VOICED_IN {roles:['Sae']}]->(Hidamari),
+(Asumi)-[:VOICED_IN {roles:['Yuno']}]->(Hidamari),
+(Gotou)-[:VOICED_IN {roles:['Hiro']}]->(Hidamari),
+(Mizuhashi)-[:VOICED_IN {roles:['Miyako']}]->(Hidamari),
+(Shinbo)-[:DIRECTED]->(Hidamari),
+(Shaft)-[:CREATED]->(Hidamari)
+
+
+CREATE (Harada:Person {name:"Hitomi Harada", born:1987})
+CREATE (Omigawa:Person {name:"Chiaki Omigawa", born:1989})
+
+
+CREATE (HidamarixH:Anime {title:'Hidamari Sketch x Honeycomb', released:2012, score:7.97})
+CREATE
+(Shintani)-[:VOICED_IN {roles:['Sae']}]->(HidamarixH),
+(Asumi)-[:VOICED_IN {roles:['Yuno']}]->(HidamarixH),
+(Gotou)-[:VOICED_IN {roles:['Hiro']}]->(HidamarixH),
+(Mizuhashi)-[:VOICED_IN {roles:['Miyako']}]->(HidamarixH),
+(Harada)-[:VOICED_IN {roles:['Nori']}]->(HidamarixH),
+(Omigawa)-[:VOICED_IN {roles:['Nazuna']}]->(HidamarixH),
+(Shinbo)-[:DIRECTED]->(HidamarixH),
+(Shaft)-[:CREATED]->(HidamarixH)
+
+
+CREATE (Sawashiro:Person {name:"Miyuki Sawashiro", born:1985})
+CREATE (Horie:Person {name:"Yui Horie", born:1976})
+
+
+CREATE (Bake:Anime {title:'Bakemonogatari', released:2009, score:8.34})
+CREATE
+(Kamiya)-[:VOICED_IN {roles:['Koyomi Araragi']}]->(Bake),
+(KanaHana)-[:VOICED_IN {roles:['Nadeko Sengoku']}]->(Bake),
+(Katou)-[:VOICED_IN {roles:['Mayoi Hachikuji']}]->(Bake),
+(Sawashiro)-[:VOICED_IN {roles:['Suruga Kanbaru']}]->(Bake),
+(Saito)-[:VOICED_IN {roles:['Hitagi Senjougahara']}]->(Bake),
+(Horie)-[:VOICED_IN {roles:['Tsubasa Hanekawa']}]->(Bake),
+(Shinbo)-[:DIRECTED]->(Bake),
+(Shaft)-[:CREATED]->(Bake)
+
+
+CREATE (Iguchi:Person {name:"Yuka Iguchi", born:1988})
+
+
+CREATE (Nise:Anime {title:'Nisemonogatari', released:2012, score:8.11})
+CREATE
+(Kamiya)-[:VOICED_IN {roles:['Koyomi Araragi']}]->(Nise),
+(KanaHana)-[:VOICED_IN {roles:['Nadeko Sengoku']}]->(Nise),
+(Katou)-[:VOICED_IN {roles:['Mayoi Hachikuji']}]->(Nise),
+(Sawashiro)-[:VOICED_IN {roles:['Suruga Kanbaru']}]->(Nise),
+(Saito)-[:VOICED_IN {roles:['Hitagi Senjougahara']}]->(Nise),
+(Horie)-[:VOICED_IN {roles:['Tsubasa Hanekawa']}]->(Nise),
+(Kitamura)-[:VOICED_IN {roles:['Karen Araragi']}]->(Nise),
+(Iguchi)-[:VOICED_IN {roles:['Tsukihi Araragi']}]->(Nise),
+(Shinbo)-[:DIRECTED]->(Nise),
+(Shaft)-[:CREATED]->(Nise)
+
+
+CREATE (IG:Studio {name:'Production IG'})
+CREATE (Murase:Person {name:"Ayumu Murase", born:1988})
+CREATE (Okamoto:Person {name:"Nobuhiko Okamoto", born:1986})
+CREATE (IshikawaK:Person {name:"Kaito Ishikawa", born:1993})
+CREATE (Furudate:Person {name:"Haruichi Furudate", born:1983})
+
+
+CREATE (Haikyu:Anime {title:'Haikyu', released:2014, score:8.65})
+CREATE
+(Murase)-[:VOICED_IN {roles:['Shouyou Hinata']}]->(Haikyu),
+(IshikawaK)-[:VOICED_IN {roles:['Tobio Kageyama']}]->(Haikyu),
+(Okamoto)-[:VOICED_IN {roles:['Yuu Nishinoya']}]->(Haikyu),
+(Kaji)-[:VOICED_IN {roles:['Kenma Kozume']}]->(Haikyu),
+(Furudate)-[:WROTE]->(Haikyu),
+(IG)-[:CREATED]->(Haikyu)
+
+
+CREATE (Bones:Studio {name:'Bones'})
+CREATE (Yamashita:Person {name:"Daiki Yamashita", born:1989})
+CREATE (Miyake:Person {name:"Kenta Miyake", born:1977})
+CREATE (Horikoshi:Person {name:"Kohei Horikoshi", born:1986})
+
+
+CREATE (MHA:Anime {title:'My Hero Academia', released:2016, score:8.42})
+CREATE
+(Yamashita)-[:VOICED_IN {roles:['Izuku Midoriya']}]->(MHA),
+(IshikawaK)-[:VOICED_IN {roles:['Tenya Iida']}]->(MHA),
+(Okamoto)-[:VOICED_IN {roles:['Katsuki Bakugo']}]->(MHA),
+(Kaji)-[:VOICED_IN {roles:['Shouto Todoroki']}]->(MHA),
+(Miyake)-[:VOICED_IN {roles:['All Might']}]->(MHA),
+(Sakura)-[:VOICED_IN {roles:['Ochaco Uraraka']}]->(MHA),
+(Yuuki)-[:VOICED_IN {roles:['Tsuyu Asui']}]->(MHA),
+(Horikoshi)-[:WROTE]->(MHA),
+(Bones)-[:CREATED]->(MHA)
+
+
+CREATE (JC:Studio {name:'JC Staff'})
+CREATE (Shimazaki:Person {name:"Nobunaga Shimazaki", born:1988})
+CREATE (Kayano:Person {name:"Ai Kayano", born:1987})
+CREATE (Hosoya:Person {name:"Yoshimasa Hosoya", born:1982})
+CREATE (Sakurai:Person {name:"Hiroaki Sakurai", born:1982})
+
+
+CREATE (Saiki:Anime {title:'Saiki Kusuo no Psi-nan', released:2016, score:8.55})
+CREATE
+(Kamiya)-[:VOICED_IN {roles:['Kusuo Saiki']}]->(Saiki),
+(Ono)-[:VOICED_IN {roles:['Riki Nendou']}]->(Saiki),
+(Shimazaki)-[:VOICED_IN {roles:['Shun Kaidou']}]->(Saiki),
+(Kayano)-[:VOICED_IN {roles:['Kokomi Teruhashi']}]->(Saiki),
+(Hosoya)-[:VOICED_IN {roles:['Aren Kuboyasu']}]->(Saiki),
+(Sakurai)-[:DIRECTED]->(Saiki),
+(JC)-[:CREATED]->(Saiki)
+
+
+CREATE (Kohara:Person {name:"Konomi Kohara", born:1992})
+CREATE (Kito:Person {name:"Akari Kito", born:1994})
+
+
+CREATE (Machikado:Anime {title:'Machikado Mazoku', released:2019, score:7.79})
+CREATE
+(Kohara)-[:VOICED_IN {roles:['Yuuko Yoshida']}]->(Machikado),
+(Kito)-[:VOICED_IN {roles:['Momo Chiyoda']}]->(Machikado),
+(Sakurai)-[:DIRECTED]->(Machikado),
+(JC)-[:CREATED]->(Machikado)
+
+
+CREATE (Madhouse:Studio {name:'Madhouse'})
+CREATE (Yamaguchi:Person {name:"Kappei Yamaguchi", born:1965})
+
+
+CREATE (DN:Anime {title:'Death Note', released:2006, score:8.67})
+CREATE
+(Yamaguchi)-[:VOICED_IN {roles:['L']}]->(DN),
+(Miyano)-[:VOICED_IN {roles:['Light Yagami']}]->(DN),
+(Hirano)-[:VOICED_IN {roles:['Misa Amane']}]->(DN),
+(Araki)-[:DIRECTED]->(DN),
+(Madhouse)-[:CREATED]->(DN)
+
+CREATE (Park:Person {name:"Romi Park", born:1972})
+CREATE (Shinichiro:Person {name:"Miki Shinichiro", born:1968})
+
+
+CREATE (FMAB:Anime {title:'FullMetal Alchemist: Brotherhood', released:2009, score:9.24})
+CREATE
+(Park)-[:VOICED_IN {roles:['Edward Elric']}]->(FMAB),
+(Shinichiro)-[:VOICED_IN {roles:['Roy Mustang']}]->(FMAB),
+(Kugimiya)-[:VOICED_IN {roles:['Alphonse Elric']}]->(FMAB),
+(Miyano)-[:VOICED_IN {roles:['Ling Yao']}]->(FMAB),
+(Bones)-[:CREATED]->(FMAB)
+
+CREATE (Furukawa:Person {name:"Makoto Furukawa", born:1989})
+CREATE (Natsume:Person {name:"Shingo Natsume", born:0000})
+
+
+CREATE (OPM:Anime {title:'One Punch Man', released:2015, score:8.78})
+CREATE
+(Furukawa)-[:VOICED_IN {roles:['Saitama']}]->(OPM),
+(Ishikawa)-[:VOICED_IN {roles:['Genos']}]->(OPM),
+(Yuuki)-[:VOICED_IN {roles:['Tatsumaki']}]->(OPM),
+(Kaji)-[:VOICED_IN {roles:['Sonic']}]->(OPM),
+(Natsume)-[:DIRECTED]->(OPM),
+(Madhouse)-[:CREATED]->(OPM)
+
+
+CREATE (Lerche:Studio {name:'Lerche'})
+CREATE (Fukuyama:Person {name:"Jun Fukuyama", born:1978})
+CREATE (Fuchigami:Person {name:"Mai Fuchigami", born:1987})
+CREATE (Matsui:Person {name:"Yuusei Matsui", born:1981})
+
+
+CREATE (AC:Anime {title:'Assassination Classroom', released:2015, score:8.25})
+CREATE
+(Fukuyama)-[:VOICED_IN {roles:['Koro Sensei']}]->(AC),
+(Okamoto)-[:VOICED_IN {roles:['Karma Akabane']}]->(AC),
+(Fuchigami)-[:VOICED_IN {roles:['Nagisa Shiota']}]->(AC),
+(Sugita)-[:VOICED_IN {roles:['Tadaomi Karasuma']}]->(AC),
+(Matsui)-[:WROTE]->(AC),
+(Lerche)-[:CREATED]->(AC)
+
+
+CREATE (Toei:Studio {name:'Toei Animation'})
+CREATE (Tanaka:Person {name:"Mayumi Tanaka", born:1955})
+CREATE (Oda:Person {name:"Eichiro Oda", born:1975})
+
+
+CREATE (OP:Anime {title:'One Piece', released:2015, score:8.54})
+CREATE
+(Tanaka)-[:VOICED_IN {roles:['Monkey D. Luffy']}]->(OP),
+(Nakai)-[:VOICED_IN {roles:['Roronoa Zoro']}]->(OP),
+(Yamaguchi)-[:VOICED_IN {roles:['Usopp']}]->(OP),
+(Kamiya)-[:VOICED_IN {roles:['Trafalgar Law']}]->(OP),
+(Sawashiro)-[:VOICED_IN {roles:['Charlotte Pudding']}]->(OP),
+(Oda)-[:WROTE]->(OP),
+(Toei)-[:CREATED]->(OP)
+
+
+CREATE (Trigger:Studio {name:'Trigger'})
+CREATE (Han:Person {name:"Megumi Han", born:1989})
+CREATE (MuraseM:Person {name:"Michiyo Murase", born:0000})
+CREATE (Orikasa:Person {name:"Fumiko Orikasa", born:1989})
+CREATE (Yoshinari:Person {name:"You Yoshinari", born:1971})
+
+
+CREATE (LWA:Anime {title:'Little Witch Academia', released:2015, score:8.09})
+CREATE
+(Han)-[:VOICED_IN {roles:['Atsuko Kagari']}]->(LWA),
+(Hikasa)-[:VOICED_IN {roles:['Diana Cavendish']}]->(LWA),
+(MuraseM)-[:VOICED_IN {roles:['Sucy Manbavaran']}]->(LWA),
+(Orikasa)-[:VOICED_IN {roles:['Lotte Janson']}]->(LWA),
+(Yoshinari)-[:DIRECTED]->(LWA),
+(Trigger)-[:CREATED]->(LWA)
+
+
+CREATE (Minase:Person {name:"Inori Minase", born:1995})
+CREATE (Hayami:Person {name:"Saori Hayami", born:1991})
+CREATE (Ishizuka:Person {name:"Atsuko Ishizuka", born:1981})
+
+CREATE (SoraYori:Anime {title:'A Place Further Than The Universe', released:2018, score:8.61})
+CREATE
+(KanaHana)-[:VOICED_IN {roles:['Shirase Kobuchizawa']}]->(SoraYori),
+(Iguchi)-[:VOICED_IN {roles:['Hinata Miyake']}]->(SoraYori),
+(Minase)-[:VOICED_IN {roles:['Mari Tamaki']}]->(SoraYori),
+(Hayami)-[:VOICED_IN {roles:['Yuzuki Shiraishi']}]->(SoraYori),
+(Ishizuka)-[:DIRECTED]->(SoraYori),
+(Madhouse)-[:CREATED]->(SoraYori)
+
+
+CREATE (Fukuhara:Person {name:"Kaori Fukuhara", born:1986})
+CREATE (Endou:Person {name:"Aya Endou", born:1980})
+CREATE (Takemoto:Person {name:"Yasuhiro Takemoto", born:1972})
+
+
+CREATE (LuckyStar:Anime {title:'Lucky Star', released:2007, score:7.80})
+CREATE
+(Hirano)-[:VOICED_IN {roles:['Konata Izumi']}]->(LuckyStar),
+(Katou)-[:VOICED_IN {roles:['Kagami Hiragi']}]->(LuckyStar),
+(Fukuhara)-[:VOICED_IN {roles:['Tsukasa Hiragi']}]->(LuckyStar),
+(Endou)-[:VOICED_IN {roles:['Miyuki Takara']}]->(LuckyStar),
+(Takemoto)-[:DIRECTED]->(LuckyStar),
+(KyoAni)-[:CREATED]->(LuckyStar)
+
+
+CREATE (Yukana:Person {name:"Yukana", born:1975})
+CREATE (Koshimizu:Person {name:"Ami Koshimizu", born:1986})
+CREATE (Takahiro:Person {name:"Takahiro Sakurai", born:1974})
+
+
+CREATE (CodeGeass:Anime {title:'Code Geass', released:2006, score:8.73})
+CREATE
+(Fukuyama)-[:VOICED_IN {roles:['Lelouch Lamperouge']}]->(CodeGeass),
+(Yukana)-[:VOICED_IN {roles:['C.C']}]->(CodeGeass),
+(Koshimizu)-[:VOICED_IN {roles:['Kallen Stadtfeld']}]->(CodeGeass),
+(Takahiro)-[:VOICED_IN {roles:['Suzaku Kururugi']}]->(CodeGeass),
+(Sunrise)-[:CREATED]->(CodeGeass)
+
+
+CREATE (PA:Studio {name:'PA Works'})
+CREATE (Harumi:Person {name:"Harumi Sakurai", born:1974})
+
+
+CREATE (AngelBeats:Anime {title:'Angel Beats!', released:2010, score:8.21})
+CREATE
+(Harumi)-[:VOICED_IN {roles:['Yuri Nakamura']}]->(AngelBeats),
+(KanaHana)-[:VOICED_IN {roles:['Kanade Tachibana']}]->(AngelBeats),
+(Kamiya)-[:VOICED_IN {roles:['Yuzuru Otonashi']}]->(AngelBeats),
+(Kitamura)-[:VOICED_IN {roles:['Yui']}]->(AngelBeats),
+(PA)-[:CREATED]->(AngelBeats)
+
+CREATE (Seto:Person {name:"Asami Seto", born:1993})
+CREATE (Asaka:Person {name:"Morio Asaka", born:1967})
+
+CREATE (Chihayafuru:Anime {title:'Chihayafuru', released:2011, score:8.25})
+CREATE
+(Seto)-[:VOICED_IN {roles:['Chihaya Ayase']}]->(Chihayafuru),
+(Miyano)-[:VOICED_IN {roles:['Taichi Mashima']}]->(Chihayafuru),
+(Hosoya)-[:VOICED_IN {roles:['Arata Wataya']}]->(Chihayafuru),
+(Asaka)-[:Directed]->(Chihayafuru),
+(Madhouse)-[:CREATED]->(Chihayafuru)
