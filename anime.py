@@ -68,8 +68,8 @@ def get_search():
                         mimetype="application/json")
 
 
-@app.route("/search_studio")
-def get_search_studio():
+@app.route("/search_year")
+def get_search_year():
     try:
         q = request.args["q"]
     except KeyError:
