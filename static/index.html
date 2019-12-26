@@ -328,7 +328,7 @@ body
     margin-left: -25px;
 }
 </style>
-    <title>Anime Graph Database</title>
+    <title>Grafowa Baza Danych Anime</title>
 </head>
 
 <body>
@@ -338,25 +338,25 @@ body
                 <ul class="nav navbar-nav">
                     <li>
                         <form role="all" class="navbar-form" id="all">
-                            <button class="btn btn-default" type="submit">Show All</button>
+                            <button class="btn btn-default" type="submit">Pokaż Wszystkie</button>
                         </form>
                         <form role="search" class="navbar-form" id="search">
                             <div class="form-group">
-                                <input type="text" value="" placeholder="Search for Anime Title" class="form-control" name="search">
+                                <input type="text" value="" placeholder="Szukaj po tytule" class="form-control" name="search">
                             </div>
-                            <button class="btn btn-default" type="submit">Search</button>
+                            <button class="btn btn-default" type="submit">Szukaj</button>
                         </form>
                         <form role="search_year" class="navbar-form" id="search_year">
                             <div class="form-group">
-                                <input type="text" value="" placeholder="Search by Year" class="form-control" name="search_year">
+                                <input type="text" value="" placeholder="Szukaj po roku produkcji" class="form-control" name="search_year">
                             </div>
-                            <button class="btn btn-default" type="submit">Search</button>
+                            <button class="btn btn-default" type="submit">Szukaj</button>
                         </form>
                         <form role="search_score" class="navbar-form" id="search_score">
                             <div class="form-group">
-                                <input type="text" value="" placeholder="Score Above" class="form-control" name="search_score">
+                                <input type="text" value="" placeholder="Ocena wyższa niż" class="form-control" name="search_score">
                             </div>
-                            <button class="btn btn-default" type="submit">Search</button>
+                            <button class="btn btn-default" type="submit">Szukaj</button>
                         </form>
                     </li>
                 </ul>
@@ -369,13 +369,13 @@ body
 <div class="row">
     <div class="col-md-2">
         <div class="panel panel-default">
-            <div class="panel-heading">Anime Graph Database</div>
+            <div class="panel-heading">Grafowa Baza Danych Anime</div>
             <table id="results" class="table table-striped table-hover">
                 <thead>
                 <tr>
-                    <th>Anime</th>
-                    <th>Released</th>
-                    <th>Score</th>
+                    <th>Tytuł</th>
+                    <th>Rok Produkcji</th>
+                    <th>Ocena</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -385,14 +385,14 @@ body
     </div>
     <div class="col-md-4">
         <div class="panel panel-default">
-            <div class="panel-heading" id="title">Details</div>
+            <div class="panel-heading" id="title">Szczegóły</div>
             <div class="row">
                 <div class="col-sm col-md-1">
                     <h1>Studio</h1>
                     <div id="studio"></div>
                 </div>
                 <div class="col-md-5 col-sm">
-                    <h1>Staff & Cast</h1>
+                    <h1>Obsada</h1>
                     <ul id="crew">
                     </ul>
                 </div>
@@ -419,7 +419,7 @@ body
                         $("#studio").text(data.studio);
                         var $list = $("#crew").empty();
                         data.cast.forEach(function (cast) {
-                            $list.append($("<li>" + cast.name + " " +cast.job + (cast.job == "voiced"?" " + cast.role : "") + "</li>"));
+                            $list.append($("<li>" + cast.name + " " + (cast.job == "voiced"?" jako " + cast.role : "") + (cast.job == "directed"?" - Reżyser " : "") + (cast.job == "wrote"?" - Oryginalny Autor " : "") + "</li>"));
                         });
                     }, "json");
             return false;
